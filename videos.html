@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Videos Page </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+            <li class="dropdown">
+                <a href="profile.html" class="dropbtn">Profile</a><br>
+                <div class="dropdown-content">
+                    <a href="pictures.html">Pictures</a><br>
+                    <a href="videos.html">Videos</a>
+                </div>
+                <li><a href="about.html">About</a></li>
+            </li>
+            <li class="news"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <h3 class="heading">Video Gallery</h3>
+
+ <div class="cont">
+        <div class="main-video">
+            <div class="video">
+                <video src="vid/1.mp4" controls muted autoplay></video>
+                <h3 class="title">Pangarap Lang Kita - Parokya Ni Edgar feat. Hapee Sy</h3>
+            </div>
+        </div>
+
+    <div class="video-list">
+        <div class="vid active">
+            <video src="vid/1.mp4"muted></video>
+            <h3 class="title">Pangarap Lang Kita - Parokya Ni Edgar feat. Hapee Sy</h3>
+        </div>
+        <div class="vid">
+            <video src="vid/2.mp4"muted></video>
+            <h3 class="title">Taylor Swift - You Belong With Me</h3>
+        </div>
+        <div class="vid">
+            <video src="vid/3.mp4"muted></video>
+            <h3 class="title">BTS-'Dynamite' Official MV (Choreography ver.)</h3>
+        </div>
+        <div class="vid">
+            <video src="vid/4.mp4"muted></video>
+            <h3 class="title">TAbra ft. Chito Miranda - Diwata (Official Music Video)/h3>
+        </div>
+        <div class="vid">
+            <video src="vid/5.mp4"muted></video>
+            <h3 class="title">BLACKPINK - 'Kill This Love' M_V</h3>
+        </div>
+        <div class="vid">
+            <video src="vid/6.mp4"muted></video>
+            <h3 class="title">Justin Bieber - Mistletoe (Official Music Video)</h3>
+        </div>
+    </div>
+ </div>
+
+<script>
+
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video video');
+let title = document.querySelector('.main-video .title');
+
+listVideo.forEach(video =>{
+    video.onclick =() =>{
+        listVideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')){
+            let src = video.children[0].getAttribute('src');
+            mainVideo.src = src;
+            let text = video.children[1].innerHTML;
+            title.innerHTML = text;
+        };
+    };
+
+});
+
+</script>
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

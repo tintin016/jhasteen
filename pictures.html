@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gallery Page </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="profile.html" class="dropbtn">Profile</a><br>
+                <div class="dropdown-content">
+                    <a href="pictures.html">Pictures</a><br>
+                    <a href="videos.html">Videos</a>
+                </div>
+                <li><a href="about.html">About</a></li>
+            </li>
+            <li class="news"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="banner">
+            <h3>Photo <span>Gallery</span></h3>
+        </div>
+
+    <div class="full-img" id="fullImgBox">
+        <img src="1.jpg"id="fullImg">
+        <span onclick="closeFullImg()">x</span>
+    </div>
+
+
+<div class="img-gallery">
+    <div class="box">
+        
+        <div class="dream">
+            <img src="img/1.jpg" onclick="openFullImg(this.src)">
+            <img src="img/4.jpg" onclick="openFullImg(this.src)">
+            <img src="img/5.jpg" onclick="openFullImg(this.src)">
+            <img src="img/6.jpg" onclick="openFullImg(this.src)">
+            <img src="img/7.jpg" onclick="openFullImg(this.src)">
+            <img src="img/2.jpg" onclick="openFullImg(this.src)">
+            <img src="img/3.jpg" onclick="openFullImg(this.src)">
+
+        </div>   
+            <div class="dream">
+                <img src="img/11.jpg" onclick="openFullImg(this.src)">
+                <img src="img/44.jpg" onclick="openFullImg(this.src)">
+                <img src="img/55.jpg" onclick="openFullImg(this.src)">
+                <img src="img/66.jpg" onclick="openFullImg(this.src)">
+                <img src="img/77.jpg" onclick="openFullImg(this.src)">
+                <img src="img/22.jpg" onclick="openFullImg(this.src)">
+                <img src="img/33.jpg" onclick="openFullImg(this.src)">
+
+            </div>
+                <div class="dream">
+                    <img src="img/111.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/444.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/555.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/666.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/777.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/222.jpg" onclick="openFullImg(this.src)">
+                    <img src="img/333.jpg" onclick="openFullImg(this.src)">
+
+                </div>
+         </div>
+    </div>
+</div>
+<script>
+
+var fullImgBox = document.getElementById("fullImgBox");
+var fullImg = document.getElementById("fullImg");
+
+function openFullImg(pic){
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+}
+
+function closeFullImg(){
+    fullImgBox.style.display = "none";
+
+}
+
+</script>
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

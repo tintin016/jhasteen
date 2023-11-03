@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>News Page </h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="profile.html" class="dropbtn">Profile</a><br>
+                <div class="dropdown-content">
+                    <a href="pictures.html">Pictures</a><br>
+                    <a href="videos.html">Videos</a>
+                </div>
+                <li><a href="about.html">About</a></li>
+            </li>
+            <li class="news"><a href="news.html">News</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="contain">
+        <div class="blog-section">
+            <div class="title">
+                <h2>ISPSC Updates</h2>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="image-section">
+                        <img src="img/01.jpg">
+                    </div>
+                    <div class="content">
+                        <h4> CSS TEACHERS' DAY CELEBRATION</h4>
+                        <p>The teachers' day celebration of the College of Computing Studies (CCS) in Sta. Maria Campus, with
+                             the theme "Celebrating the Day of the Backbones of All Professions," is a challenging yet successful day
+                              of showing the love, gratitude, and support of the students, staff, and teachers for the event...</p>
+                        <a href="javascript:void(0);" onclick="toggleContent('content1')">Read More</a>
+                        <div class="hidden-content" id="content1">
+                        
+                            <p>With the inspirational thoughts from the ISPSC Sta. Maria College Administrator: Dr. Francisco N. Divina
+                                 and the participation of the teachers of the CCS,  the program was successfully delivered, and the teachers
+                                  were pleased to enjoy the event. Once again, happy Teacher's Day to all the faculty members and staff of the
+                                  CCS department. </p>
+                            <p>This event may not have been possible without the hard work and efforts of the newly elected, hardworking, and 
+                                very active Computing Society of the Philippines (CSP) officers, headed by the CSP President, Hillary Buis, 
+                                together with their adviser, Mrs. Cherry Lynn Navato.</p>
+                        </div>
+                    </div>
+                    <div class="posted-date">
+                        <p>October 7 2023</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-section">
+                        <img src="img/03.jpg">
+                    </div>
+                    <div class="content">
+                        <h4>ISPSC WORLD TEACHERS' DAY CELEBRATION</h4>
+                        <p>“Your dedication to your noble work is truly admirable, and we are grateful for all the extra time and effort you put in to help us succeed."
+                            It is indeed a day brimming as we celebrate the greatness and undying passion of our beloved teachers. Our unsung heroes of our society
+                            dedicate themselves to inspiring, educating, and guiding the youth for the future.</p>
+                        <a href="javascript:void(0);" onclick="toggleContent('content3')">Read More</a>
+                        <div class="hidden-content" id="content3">
+                            
+                            <p>Teachers give us direction in life and help us cultivate our expertise and assets. They deal with the pleasures, joys, and pitfalls of their
+                                 honorable career. A teacher is a compass that activates the magnets of curiosity, knowledge, and wisdom. Albert Einstein once said, “It is the 
+                                 supreme art of the teacher to awaken joy in creative expression and knowledge”, their advice and guidance have a significant impact on how we live,
+                                  and they have shaped us in profound and numerous ways.Agyamankami maestro/maestro, Happy Teachers Day!</p>
+                        </div>
+                    </div>
+                    <div class="posted-date">
+                        <p>October 6 2023</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image-section">
+                        <img src="img/02.jpg">
+                    </div>
+                    <div class="content">
+                        <h4>World Mental Health Day</h4>
+                        <p>The Office of Guidance Counseling and Services leads the World Mental Health Celebration every 10th day of October.
+                             The theme for this year's celebration is "Mental Health is a Universal Right", as presupposed by the World Foundation
+                              of Mental Health.</p>
+                        <a href="javascript:void(0);" onclick="toggleContent('content2')">Read More</a>
+                        <div class="hidden-content" id="content2">
+                         
+                            <p>The mental health campaign and awareness program are scheduled from October 9 until 13, 2023, on all Ilocos Sur Polytechnic
+                                 State College (ISPSC) campuses. This day, October 10, 2023, the celebration of the program takes place at the ISPSC Santa 
+                                 Maria Campus College Gymnasium. This program features the ever active resource speaker, Mrs. Princess D. Racca, RGC - Head
+                                  of Guidance Counseling and Services..</p>
+                            <p>With the participation of the College of Computing Studies (CCS) student leaders, classroom officers, and the officers of
+                                 the Computing Society of the Philippines (CSP) of Ilocos Sur Polytechnic State College, Santa Maria Campus, they actively 
+                                 participate in spreading awareness about mental health and making a positive change towards mental health.</p>
+                        </div>
+                    </div>
+                    <div class="posted-date">
+                        <p>October 10 2023</p>
+                    </div>
+                </div>
+
+
+                
+            
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleContent(contentId) {
+            var contentElement = document.getElementById(contentId);
+            if (contentElement.style.display === "none" || contentElement.style.display === "") {
+                contentElement.style.display = "block";
+            } else {
+                contentElement.style.display = "none";
+            }
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2023 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
